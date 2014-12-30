@@ -1,0 +1,6 @@
+[submodule "deps/geom"]
+	path = deps/geom
+	url = git@github.com:mythagel/geom.git
+[submodule "deps/cxxcam"]
+	path = deps/cxxcam
+	url = git@github.com:mythagel/cxxcam.git
