@@ -4,7 +4,7 @@ INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/deps/geo
 
 MACRO(CAMMACHINE_TEST testname)
 	ADD_EXECUTABLE(${testname} EXCLUDE_FROM_ALL "${testname}.cpp")
-	TARGET_LINK_LIBRARIES(${testname} cxxcam svg_path camMachine)
+	TARGET_LINK_LIBRARIES(${testname} cxxcam camMachine)
 	SET_TARGET_PROPERTIES(${testname} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
 	ADD_TEST(${testname} "${MAKE_CURRENT_BINARY_DIR}/${testname}")
 	ADD_DEPENDENCIES(check ${testname})
